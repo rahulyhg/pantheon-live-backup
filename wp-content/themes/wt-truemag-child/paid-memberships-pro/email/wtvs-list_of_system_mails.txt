@@ -1,0 +1,138 @@
+The following is a list of all system generated mail templates I have found from postman smtp log
+NEVER CHANGE THE LIST SEQUENCE AS TRIGGER REFERENCE IS MADE AS PER SERIAL NUMBER
+
+1.
+(Trigger: This is sent a minute after sending mail no. 2)
+Subject : Member Checkout for Free Membership at Web Talkies
+To: support@webtalkies.in
+From:support@webtalkies.in
+Reply-To: support@webtalkies.in
+body : refer testemail-admin.html
+
+2. 
+(Trigger: This is sent when a user registers)
+Subject: Your membership confirmation for Web Talkies
+From:	Web Talkies <support@webtalkies.in>
+To:	facebook_user_megha_patel@example.com
+Reply-To:	support@webtalkies.in
+body: refer testemail-user.html
+
+3. 
+Subject:[Web Talkies] Password Reset
+From:	Web Talkies <support@webtalkies.in>
+To:	Sefali.patel@yahoo.com
+Reply-To:	support@webtalkies.in
+Body : 
+Someone requested that the password be reset for the following account: 
+https://www.webtalkies.in/ Username: Chakupal 
+If this was a mistake, just ignore this email and nothing will happen.
+To reset your password, visit the following address:
+
+
+4.
+Subject:	Web Talkies New Order details
+From:	Web Talkies <support@webtalkies.in>
+To:	support@webtalkies.in
+Reply-To:	support@webtalkies.in
+Body : [MID=Crimso01950114019645] [ORDERID=7BF11D489A] [TXNAMOUNT=30.00] [CURRENCY=INR] [TXNID=7067546707] [BANKTXNID=11856196026] [STATUS=TXN_SUCCESS] [RESPCODE=01] [RESPMSG=Txn Successful.] [TXNDATE=2017-06-28 01:10:18.0] [GATEWAYNAME=WALLET] [BANKNAME=] [PAYMENTMODE=PPI] [CHECKSUMHASH=YGtbKvTkeGWLxX9at5L65AGmf2ARgp/c+40PYvlFNefugXq3vIbMalEomFuO7GbKhjKvmmYv1p+yNLUYEVyFnDzMLiZ/QOd1eKunSnnqu2Q=] [key-matched=YES] [Order Status Updated to Success?=1] [Membership Level Changed?=Yes] [Order ID=7BF11D489A] [User Email=virendra.shahaney@webtalkies.in] [Original User Level=10] [Desired User Level=7] [New User Level=7] [Mail sent to user?=1] [Timestamp=2017-06-28 01:14:46]
+
+5.
+Subject: Thank you. Your transaction was successful.
+From:	Web Talkies <support@webtalkies.in>
+To:	virendra.shahaney@webtalkies.in
+Reply-To:	support@webtalkies.in
+Body :	<img src="https://www.webtalkies.in/wp-content/uploads/2016/10/Thank-you.jpg" />
+
+6. 
+Subject:	Your membership at Web Talkies has ended
+From:	Web Talkies <support@webtalkies.in>
+To:	virendrashahaney@gmail.com
+Reply-To:	support@webtalkies.in
+Datetime: 2017-06-24 19:44:59
+Body : Refer file - record-mail.membership-expired.html
+
+
+
+7. 
+Subject:	[Web Talkies] Password Changed
+From:	Web Talkies <support@webtalkies.in>
+To:	support@webtalkies.in
+Reply-To:	support@webtalkies.in
+Body : Password changed for user: hemant1989
+
+8.
+Subject:	[Web Talkies] New User Registration
+From:	Web Talkies <support@webtalkies.in>
+To:	support@webtalkies.in
+Reply-To:	support@webtalkies.in
+Body:
+New user registration on your site Web Talkies:
+Username: Hitu_Ahir
+Email: hitu4412@gmail.com
+
+9. 
+Subject:	[Web Talkies] Your username and password info
+From:	Web Talkies <support@webtalkies.in>
+To:	Lora@macr2.com
+Reply-To:	support@webtalkies.in
+Body:
+Username: Lorafaith
+To set your password, visit the following address:
+https://www.webtalkies.in/login/
+
+10.
+Subject:	[Web Talkies] Comment: "Population Out of Control"
+From:	Web Talkies <support@webtalkies.in>
+To:	channel.manager@webtalkies.in
+Reply-To:	"dishugautam9808@gmail.com" <dishugautam9808@gmail.com>
+body:
+[
+New comment on your post "Population Out of Control"
+Author: Dishugautam9808@gmail.com Dishugautam9808@gmail.com (IP: 106.67.33.114, 106.67.33.114)
+Email: dishugautam9808@gmail.com
+URL: 
+Comment: 
+????? ????? ??
+
+You can see all comments on this post here:
+https://www.webtalkies.in/population-out-of-control/#comments
+
+Permalink: https://www.webtalkies.in/population-out-of-control/#comment-237
+Trash it: https://www.webtalkies.in/wp-admin/comment.php?action=trash&c=237#wpbody-content
+Spam it: https://www.webtalkies.in/wp-admin/comment.php?action=spam&c=237#wpbody-content
+]
+
+11. 
+Subject:	[Web Talkies] Notice of Password Change
+From:	Web Talkies <support@webtalkies.in>
+To:	alokk20894@gmail.com
+Reply-To:	support@webtalkies.in
+body:
+[Hi alokwebtokies,
+
+This notice confirms that your password was changed on Web Talkies.
+
+If you did not change your password, please contact the Site Administrator at
+support@webtalkies.in
+
+This email has been sent to alokk20894@gmail.com
+
+Regards,
+All at Web Talkies
+https://www.webtalkies.in
+]
+
+
+12.
+Subject:	Your membership at Web Talkies will end soon
+From:	Web Talkies <support@webtalkies.in>
+To:	virendrashahaney@gmail.com
+Reply-To:	support@webtalkies.in
+Datetime: 2017-06-22 19:44:59 (Time may not matchw tih addresses, as i have put it randomly.)
+body : Refer file - record-mail-membership-expiring-soon
+
+
+
+
+
+ 

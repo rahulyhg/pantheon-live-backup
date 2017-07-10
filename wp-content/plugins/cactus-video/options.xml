@@ -1,0 +1,23 @@
+<?xml version='1.0'?> 
+<options>
+	<tab label="Playlist settings" icon="cog">
+		<group>
+			<fields label="Playlist slug">
+				<option id="playlist-slug" type="textfield" width="100" default="playlist"></option>
+				<description>Change single playlist slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Playlists Listing page">
+				<option id="playlist-lis-slug" type="page" width="100" default=""></option>
+				<description>Assign Playlists Listing page to a page. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Single Playlist sidebar">
+				<option id="playlist_sg_sidebar" type="select" default="right" tooltip="" >
+					<select value="full" text="Full Width"/>
+					<select value="right" text="Sidebar Right"/>
+					<select value="left" text="Sidebar Left"/>
+				</option>
+				<description></description>
+			</fields>
+		</group>
+	</tab>
+</options>

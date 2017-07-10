@@ -1,0 +1,30 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Affiliatez plugin\n"
+"POT-Creation-Date: \n"
+"PO-Revision-Date: \n"
+"Last-Translator: Doan Ngoc Ha <hadoanngoc@gmail.com>\n"
+"Language-Team: HA DOAN NGOC <hadoanngoc@gmail.com>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: en\n"
+"X-Generator: Poedit 1.6.4\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+
+#: affiliate.php:54
+msgid "Affiliatez Settings"
+msgstr "Affiliatez"
+
+#: Admin_Custom_Field_Filter.php:65
+msgid "Show All store_id"
+msgstr "Show All stores"
+
+msgid "Stores"
+msgstr "Stores"
+
+msgid "is_sticky"
+msgstr "Featured"
+
+msgid "aff_url"
+msgstr "URL"

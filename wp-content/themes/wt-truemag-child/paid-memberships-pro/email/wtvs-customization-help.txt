@@ -1,0 +1,102 @@
+//The variable information (Use this codes including !! !! to insert variable information inisde email html
+General Settings / Membership Info
+!!name!!	Display Name (Profile/Edit User > Display name publicly as)
+!!user_login!!	Username
+!!sitename!!	Site Title
+!!siteemail!!	Site Email Address (General Settings > Email OR Memberships > Email Settings)
+!!membership_id!!	Membership Level ID
+!!membership_level_name!!	Membership Level Name
+!!membership_change!!	Membership Level Change
+!!membership_expiration!!	Membership Level Expiration
+!!display_name!!	Display Name (Profile/Edit User > Display name publicly as)
+!!enddate!!	User Subscription End Date
+!!user_email!!	User Email
+!!login_link!!	Login URL
+!!levels_link!!	Membership Levels Page URL
+Billing Information
+!!billing_address!!	Billing Info Complete Address
+!!billing_name!!	Billing Info Name
+!!billing_street!!	Billing Info Street Address
+!!billing_city!!	Billing Info City
+!!billing_state!!	Billing Info State
+!!billing_zip!!	Billing Info ZIP Code
+!!billing_country!!	Billing Info Country
+!!billing_phone!!	Billing Info Phone #
+!!cardtype!!	Credit Card Type
+!!accountnumber!!	Credit Card Number (last 4 digits)
+!!expirationmonth!!	Credit Card Expiration Month (mm format)
+!!expirationyear!!	Credit Card Expiration Year (yyyy format)
+!!membership_cost!!	Membership Level Cost Text
+!!instructions!!	Payment Instructions (used in Checkout - Email Template)
+!!invoice_id!!	Invoice ID
+!!invoice_total!!	Invoice Total
+!!invoice_date!!	Invoice Date
+!!discount_code!!	Discount Code Applied
+!!invoice_link!!	Invoice Page URL
+
+//Following is the code for customising email properties
+
+/*
+	Change email subjects.
+
+	The function checks $email->template and updates the subject as needed.   
+
+	The email template name will be equivalent to the filenames in the /email/ folder of the PMPro plugin.  
+*/
+function my_pmpro_email_subject($subject, $email)
+{		
+	//only checkout emails
+	if($email->template == "checkout_free")
+	{
+		$subject = "Thank you, " . $email->data["name"] . ", for using " . get_bloginfo("name");
+	}
+ 
+	return $subject;
+}
+add_filter("pmpro_email_subject", "my_pmpro_email_subject", 10, 2);
+
+
+/*
+  Edit email templates.
+  
+  Other fields to change:
+  * $email->email
+  * $email->from
+  * $email->fromname
+  * $email->subject
+  * $email->template
+  * $email->body
+  * $email->headers
+*/
+function my_pmpro_email_filter($email)
+{	
+	$replace_data_again = false;
+	
+	if($email->template == "checkout_free")
+	{
+		//update subject
+		$email->subject = "Thank you for your application.";
+		
+		//update body !! update this to point to a real email template file
+		$email->body = file_get_contents(dirname(__FILE__) . "/emails/checkout_applicant.html");
+		
+		$replace_data_again = true;		
+	}
+		
+	if($replace_data_again)
+	{
+		//replace data
+		if(is_string($email->data))
+			$email->data = array("body"=>$email->data);			
+		if(is_array($email->data))
+		{
+			foreach($email->data as $key => $value)
+			{
+				$email->body = str_replace("!!" . $key . "!!", $value, $email->body);
+			}
+		}	
+	}
+		
+	return $email;
+}
+add_filter("pmpro_email_filter", "my_pmpro_email_filter");

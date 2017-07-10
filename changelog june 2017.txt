@@ -1,0 +1,70 @@
+*June 1, 2017
+
+* Uploaded checkout.php in child-theme paid membership pro folder with fortumo gateway option added.
+* Uploaded wt_custom_endpoint. php file with instamojo endpount working and fortumo end point not working.
+* class.pmprogateway.custommix.php test credentials of paytm hardcoded. However they dont work. When used with live credentials the code wworks well so code is ok. check credentials. 
+* class.pmprogateway.custommix.php fortumo fork also added. it works for all three : LIVE, TEST-OK and Test-fail conditions.
+* class.pmprogateway.custommix.php instamojo test credentials hardcocded. They work well. 
+* pmpro-customizations.php has new functions to send email to user, wtvs_report_error and instamojo_key-hash_checking_function. All work.
+* PMPRO payement settings now show all options : Paytm, Instamojo and Fortumo. These are coming from class.pmprogateway.custommix.php
+* custom plugin wt-custom-registration-field adds mobile number to register form and gives new user FREE membership of pmpro.
+
+*June 2, 2017
+Fortumo custom end point added. Working.
+function wtvs_json_log added to pmpro-customization.php to log json in webtalkies_json_log.txt
+check signature and check has data functions added to fortumo and instamojo endpoints.
+wtvs_json_log functions added to fortumo and instamojo endpoints
+
+*June 3, 2017
+*SUCCES MILESTONE: All three payment gateways cleaned through new functionality and all send proper mails to support@webtalkies.in with new order details. 
+This can be used to track what happened under the hood of backend if any order details is not updated properly.
+*Retired plugins moved in zzz-retired-plugin-for-safety folder. do not delete this folder.
+
+*June 4
+=>Function to write order status details to a file called webtalkies_json_log.txt added. File location wp-content/uploads. 
+
+*22 June
+=> Fortumo end point secret value changed hardcoded for UMG.
+
+*23 june 
+=> Fortumo end point secret key retrieval softcoded
+
+*24 June 2017
+=> REPLACED style.css in wp-content/themes/truemag-child replaced WITH style.css from sandesh
+=> DELETED folder name css FROM wp-content/plugins/pmpro-advanced-levels-shortcode/
+=> REPLACED theme-my-login.css in wp-content/plugins/theme-my-login/ with theme-my-login.css from sandesh
+=> REPLACED sitt.css and sitt.min.css in retired plugins simple-twitter-tweets/css
+=> ADDED admin.css in wp-content/plugins/video-ads/css from Sandesh
+=> REPLACED video-ads-management.css in wp-content/plugins/video-ads/css from Sandesh
+=> REPLACED 5 files => admin.css admin-rtl.css frontend.css frontend-rtl.css print.css in plugins/paid-membership-pro/css from sandesh
+=> MINIFIED 3 files => admin.css, editor-style.css, index.php in plugins/popups/admin/assets/css
+=> MINIFIED 3 files => admin.css, editor-style.css, index.php in plugins/popups-premium/admin/assets/css
+=> MINIFIED 5 files => admin.css, edit_layers.css, global.css, index.php, tipsy.css in plugins/revslider/admin/assets/css
+=> MINIFIED 2 files => bulk.css, settings.css in plugins/video-thumbnails/css
+=> RETIRED pmpro advanced levels plugin
+-----END OF DAY--------
+
+28 June 2017
+=>ADDED folder named 'email' in themes/wt-truemag-child/paid-memberships-pro.
+=> ADDED header.html in themes/wt-truemag-child/paid-memberships-pro/email this can be edited to add custom html header.
+=> ADDED footer.html in themes/wt-truemag-child/paid-memberships-pro/email this can be edited to add custom html footer.
+=> ADDED customization-help.txt, list-of-system-mails.txt to themes/wt-truemag-child/paid-memberships-pro/email.
+=> ADDED folder sample-templates in themes/wt-truemag-child/paid-memberships-pro/email with four sample templates wtvs-newregistration-admin.html, wtvs-newregistration-user.html, wtvs-membership-expiring.html, wtvs-membership-expired.html
+
+
+29th june 2017
+=>EDITED header-navigation.php in wp-content/themes/wt-truemag-child. The main logo now redirects to homepage.
+
+30th June 2017
+=> EDITED pmpro-customizations.php, required custom wtvs-pmpro-account.php
+=> ADDED FOLDER shortcodes inside pmpro-customizations plugin
+=> ADDED custom shortcode file wtvs-pmpro-account.php to generate custom my-account page with correct invoice information.
+=> REINSTALLED pmpro-advanced-level-shortcode-plugin
+=> MODIFIED style.css in wp-content/themes/wt-truemag-child/
+
+3rd July 2017
+=> custom end point for instamojo edited.
+--------AT THIS POINT ALL GATEWAY FUNCTIONALITIES ARE WORKING AS THEY SHOULD------------
+
+7th July 2017
+=>RESTORED FOLDER plugin/pmpro-advannced-levels-shortcodes/css and RESTORED file pmpro-advanced-levels.css IT IS AN EMPTY FILE. restored it to avoide 404 error.

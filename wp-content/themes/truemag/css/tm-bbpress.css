@@ -1,0 +1,66 @@
+@charset "utf-8";
+#bbpress-forums {
+	font-size: 13px;
+}
+#bbpress-forums ul li:before {
+	content: '';
+}
+#bbpress-forums ul li{
+	padding-left:0;
+}
+
+#bbpress-forums ul.bbp-lead-topic, #bbpress-forums ul.bbp-topics, #bbpress-forums ul.bbp-forums, #bbpress-forums ul.bbp-replies, #bbpress-forums ul.bbp-search-results {
+	font-size: 13px;
+	border: solid 1px #e7e7e7;
+	border-radius: 4px;
+}
+#bbpress-forums li.bbp-header{
+	background: #f2f2f2;
+	border-top: none;
+}
+#bbpress-forums ul.bbp-forums li.bbp-footer, #bbpress-forums ul.bbp-topics li.bbp-footer {
+	background: none;
+	border-top: none;
+	padding: 0;
+	display:none;
+}
+#bbpress-forums .bbp-forum-title, #bbpress-forums .bbp-topic-title .bbp-topic-permalink{
+	font-size:15px;
+	font-weight:bold;
+}
+#bbpress-forums .bbp-forum-info .bbp-forum-content, #bbpress-forums p.bbp-topic-meta {
+	font-size: 13px;
+}
+#bbpress-forums .bbp-forums-list li {
+	font-size: 13px;
+}
+#bbpress-forums #subscription-toggle{
+	font-size:13px;
+	float:right;
+}
+#bbpress-forums div.wp-editor-container,#bbpress-forums fieldset.bbp-form{
+	border: 1px solid #e7e7e7;
+	border-radius: 4px;
+}
+#bbpress-forums p.bbp-topic-meta img.avatar, #bbpress-forums ul.bbp-reply-revision-log img.avatar, #bbpress-forums ul.bbp-topic-revision-log img.avatar, #bbpress-forums div.bbp-template-notice img.avatar, #bbpress-forums .widget_display_topics img.avatar, #bbpress-forums .widget_display_replies img.avatar {
+	margin-bottom: 0px;
+	border: none;
+	border-radius: 50%;
+}
+#bbpress-forums div.bbp-forum-author img.avatar, #bbpress-forums div.bbp-topic-author img.avatar, #bbpress-forums div.bbp-reply-author img.avatar {
+	margin: 12px auto 0 auto;
+	border-radius: 50%;
+}
+
+#bbpress-forums fieldset.bbp-form legend {
+	float:left;
+	padding-left:0;
+}
+
+/*widget*/
+.widget_display_stats dl dt{
+	float:left;
+}
+.widget_display_stats dl dd{
+	text-align:right;
+}

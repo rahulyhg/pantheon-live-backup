@@ -1,0 +1,60 @@
+<?xml version='1.0'?>
+<options>
+	<tab label="General" icon="cog">
+		<group label="">
+			<fields label="">
+				<option label="Enable Ads" id="enable-ads" type="select" default="yes">
+					<select value="yes" text="Yes"/>
+					<select value="no" text="No"/>
+				</option>
+			</fields>
+			<fields label="">
+				<option id="show-close-button" label="Show close button after (seconds)" type="textfield" width="100" default="5"></option>
+				<option id="auto-turn-on-advs" label="Video Ads play again after (seconds)" type="textfield" width="100" default="20"></option>
+			</fields>
+			<fields label="">
+				<option id="full-banner-auto-turn-on-advs" label="Full banner play again after (seconds)" type="textfield" width="100" default="20"></option>
+				<option id="top-bottom-banner-auto-turn-on-advs" label="Top - bottom banner play again after (seconds)" type="textfield" width="100" default="20"></option>
+			</fields>
+			<fields label="">
+				<option label="Close Button Position" id="close-button-position" type="select" default="left">
+					<select value="left" text="Left"/>
+					<select value="right" text="Right"/>
+				</option>
+			</fields>
+			<fields label="">
+				<option id="close-button-text" label="Close button text" type="textfield" width="400" default="SKIP ADS >>" tooltip=""></option>
+			</fields>
+		</group>
+	</tab>
+	<tab label="Brand" icon="cog">
+		<group>
+			<fields label="">
+				<option label="Enable Brand" id="enable-brand" type="select" default="yes">
+					<select value="yes" text="Yes"/>
+					<select value="no" text="No"/>
+				</option>
+			</fields>
+			<fields>
+				<option id="ads-logo" label="Upload Logo" type="media"/>
+			</fields>
+			<fields label="">
+				<option id="ads-text" label="Ads Text" type="textfield" width="400" default="Cactusthemes" tooltip="Ads text will display when logo is empty"></option>
+			</fields>
+			<fields label="">
+				<option label="Position" id="ads-position" type="select" default="top-right">
+					<select value="top-right" text="Top right"/>
+					<select value="top-left" text="Top left"/>
+					<select value="bottom-right" text="Bottom right"/>
+					<select value="bottom-left" text="Bottom left"/>
+				</option>
+			</fields>
+			<fields label="">
+				<option id="ads-opacity" label="Opacity" type="textfield" width="100" default="0.5"></option>
+			</fields>
+			<fields label="">
+				<option label="Text color" id="ads-text-color" type="color" default="#ffffff"/>
+			</fields>
+		</group>
+	</tab>
+</options>

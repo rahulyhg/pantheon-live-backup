@@ -1,0 +1,35 @@
+<?xml version='1.0'?> 
+<options>
+	<tab label="General" icon="cog">
+		<group label="Group Settings 1">
+			<fields label="Transition Interval 2">
+				<option id="transition-interval-2" type="color" default="1000" tooltip="hover me"/>				
+				<option id="slider-effect" type="select" default="slide" tooltip="What you see is what you get">
+					<select value="slide" text="Slide"/>
+					<select value="fade" text="Fade"/>
+				</option>
+				<description>
+					bla bla bla<br/>
+					how <b>dy</b>
+					
+				</description>
+			</fields>
+			<fields label="Slider Effect">
+				<option id="enable-auto-play" label="Enable Auto Play" type="checkbox" default="0">
+					<select value="0" text="No"/>
+				</option>
+				<option id="enable-play-button" label="Enable Play Button" type="radio" default="">
+					<select value="0" text="No"/>
+					<select value="1" text="Yes"/>
+				</option>
+				<option id="transition-interval" label="Transition Interval" type="textfield" width="100" default="1000">
+				</option>
+			</fields>			
+		</group>		
+	</tab>
+	<tab label="More Settings">
+	
+	</tab>
+	<tab label="Advanced Settings">
+	</tab>
+</options>

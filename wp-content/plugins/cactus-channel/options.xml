@@ -1,0 +1,27 @@
+<?xml version='1.0'?> 
+<options>
+	<tab label="General" icon="cog">
+		<group>
+			<fields label="Channel slug">
+				<option id="channel-slug" type="textfield" width="100" default="channel"></option>
+				<description>Change single Channel slug. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Channel Listing page">
+				<option id="channel-lis-slug" type="page" width="100" default=""></option>
+				<description>Assign Channel Listing page to a page. Remember to save the permalink settings again in Settings > Permalinks</description>
+			</fields>
+			<fields label="Single Channel sidebar">
+				<option id="channel_sg_sidebar" type="select" default="right" tooltip="" >
+					<select value="full" text="Full Width"/>
+					<select value="right" text="Sidebar Right"/>
+					<select value="left" text="Sidebar Left"/>
+				</option>
+				<description></description>
+			</fields>
+			<fields label="Subscribed Channels page - Number of items per channel">
+				<option id="subscreibed_item_page" type="textfield" width="100" default="4"></option>
+				<description></description>
+			</fields>
+		</group>
+	</tab>
+</options>

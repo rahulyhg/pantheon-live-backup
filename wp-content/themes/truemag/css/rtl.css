@@ -1,0 +1,131 @@
+@charset "utf-8";
+*{
+	direction:rtl;
+	text-align:right;
+}
+@media (min-width: 768px){
+.navbar-header {
+    float: right;
+}
+.navbar-right {
+    float: left!important;
+}
+.headline-content.col-md-6 {
+    float: right;
+}
+.smart-box-style-4 .video-item .col-md-6.col-sm-6:first-child {
+    float: right;
+}
+}
+.main-menu li *{
+	direction:ltr;
+}
+#player-embed{
+	text-align:center;
+}
+.input-group{
+	direction:ltr;
+}
+.headline .htitle .hicon{
+	float:right;
+}
+.headline .htitle .hicon .first-tex{
+	margin-left:0;
+	margin-right:10px;
+}
+#head-carousel .video-item .item-head h3{
+	text-align:center;
+}
+.smart-control{
+	direction:ltr;
+	margin-left:10px;
+	float: left !important;
+}
+.video-item .item-meta span {
+	margin-right: 0px;
+	margin-left: 20px;
+}
+.tm_widget_categories ul li a,.tm_widget_categories ul li p {
+	margin-left: 0px;
+	margin-right: 20px;
+}
+.widget.widget-border.widget_nav_menu .menu .menu-item:before {
+	margin-right: 0px;
+	margin-left: 10px;
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+}
+.readmore .fa-angle-right{
+	transform:rotate(180deg);
+	-webkit-transform:rotate(180deg);
+}
+.navbar-static-top .main-menu ul.navbar-nav{ direction:rtl}
+.navbar-static-top .main-menu ul.navbar-nav li{ float:right}
+.navbar-static-top .main-menu ul.navbar-nav li ul li{ width:100%}
+.main-menu .nav > li:last-child > a{ padding-right:15px}
+.main-menu .nav > li:first-child > a{ padding-right:0}
+.bottom-menu li{ border-left:solid 1px #3c3c3c;; border-right:0}
+
+#bottom .widget.PI_SimpleTwitterTweets li {
+	padding-left: 0px;
+	padding-right:33px;
+}
+#bottom .widget.PI_SimpleTwitterTweets ul li:before {
+	margin-left: 17px;
+	margin-right: -40px;
+}
+.navbar-static-top .main-menu ul.navbar-nav li .sub-menu-box .columns>li{ float: left; }
+.navbar-static-top .main-menu ul.navbar-nav li .sub-menu-box .columns>li{ width: 25%; }
+
+.simple-navigation-item:first-child .simple-navigation-item-content,
+.simple-navigation-item:first-child .simple-navigation-item-content h4 {
+	text-align: left;
+}
+.box-more.single-full-pl {
+	padding: 8px 18px 10px 12px;
+}
+
+.classy3 #stage-carousel .video-item .item-heading {
+    float: right;
+}
+.classy3 #stage-carousel .video-item .ct-btn.pull-right {
+    float: left !important;
+}
+.blog-heading .col-md-10.col-sm-10.col-xs-9 {
+    float: right;
+}
+/*Channel*/
+	.cactus-sub-wrap .content .posted-on > * { float:right;}
+	.subs-button .subs-row .subs-cell a > i {
+	  margin-right: auto;
+	  margin-left: 3px;
+	}
+	.btn-playall i { margin-right:auto; margin-left:6px;}
+	.cactus-widget-posts .widget-picture,
+	.cactus-widget-posts .cactus-widget-posts-content { float:right;}
+	.mCS-dir-rtl>.mCSB_inside>.mCSB_container { margin-left:0 !important;}
+	
+	.channel-name-wrap .channel-picture { margin-right:auto; margin-left:10px;}
+	.channel-name-wrap.pull-left { float:right !important;}
+	.subs.pull-right { float:left !important;}
+	.navi.pull-left { float:right !important;}
+	
+	.header-channel .header-channel-content .table-cell h1,
+	.header-channel .header-channel-content .table-cell .social-listing { text-align:center;}
+	.cactus-new-feed .btn-tdep i { margin-left:6px; margin-right:0;}
+	
+	@media(max-width:767px) {
+		.channel-name-wrap .table-channel-heading { text-align:center;}
+		.channel-name-wrap .channel-picture { margin:0;}
+	}
+	
+	article.comment .avatar-wrap { padding-right:0; padding-left:20px;}
+	
+	.open-tab-menu { right:auto; left:0;}
+	.open-tab-menu:hover .navi-sub-content { right:auto; left:2px;}
+	@media (max-width: 767px){
+		.sc-button {
+			text-align:right;
+		}
+	}
+/*Channel*/
